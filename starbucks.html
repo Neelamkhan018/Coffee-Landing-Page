@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>starbucks website landing page</title>
+    <link rel="stylesheet" href="starbucks.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="https://freepngimg.com/thumb/coffee/62141-coffee-food-starbucks-file-logo-cafe.png" height="65px" width="70px"></a>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">WHAT'S NEW</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+          <h2>It's not just coffee<br>It's<span>Starbucks</span></h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam, fugit quisquam ipsa sed quae quas accusantium odio ratione non, itaque, ab nobis architecto quia officia molestias voluptas maxime doloribus.</p>
+          <a href="#">Learn more</a>
+            </div>
+            <div class="imgbox">
+        <img src="C:\Users\91913\Downloads\img1 (1).png" class="starbucks">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img src="C:\Users\91913\Downloads\thumb1.png" onclick="imgSlider('https://freepngimg.com/thumb/starbucks/77325-frappuccino-drink-chocolate-starbucks-matcha-white.png');changeCircleColor('#017143')"></li>
+        <li><img src="C:\Users\91913\Downloads\thumb2.png" onclick="imgSlider('https://freepngimg.com/thumb/coffee/62115-tea-coffee-drink-starbucks-latte-free-download-image.png');changeCircleColor('#eb7495')"></li>
+        <li><img src="C:\Users\91913\Downloads\thumb3.png" onclick="imgSlider('https://freepngimg.com/thumb/coffee/62120-coffee-frappuccino-drink-latte-starbucks-unicorn.png');changeCircleColor('#d752b1')"></li>
+    </ul>
+    <ul class="sci">
+        <li><a href="#"><img src="C:\Users\91913\Downloads\facebook.png"></a></li>
+        <li><a href="#"><img src="C:\Users\91913\Downloads\instagram.png"></a></li>
+        <li><a href="#"><img src="C:\Users\91913\Downloads\twitter.png"></a></li>
+    </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
+
+
